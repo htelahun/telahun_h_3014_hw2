@@ -8,14 +8,14 @@ require_once('phpscripts/config.php');
 if(isset($_POST['submit'])){
   $fname = trim($_POST ['fname']);
   $username = trim($_POST['username']);
-  $password = trim($_POST['password']);
+  // $password = trim($_POST['password']);
   $email = trim($_POST['email']);
   $userlvl = $_POST['userlvl'];
 
 if(empty($userlvl)){
   $message = "Please select user level";
 }else {
-  $result = createUser($fname, $username, $password, $email, $userlvl);
+  $result = createUser($fname, $username,$email, $userlvl);
   $message = $result;
 }
 }
@@ -49,10 +49,6 @@ if(empty($userlvl)){
 
         <label style="color:white;font-weight:bold;" class="mid">USERNAME </label>
         <input class="center-input" type="text" name="username" value="" <?php if(!empty($username)){echo $username;} ?>><br><br>
-
-
-          <label style="color:white;font-weight:bold;" class="mid ">PASSWORD </label>
-          <input class="center-input" type="text" name="password" value="" <?php if(!empty($password)){echo $password;} ?>><br><br>
 
           <label style="color:white;font-weight:bold;" class="mid">E-MAIL</label>
           <input class="center-input" type="text" name="email" value="" <?php if(!empty($email)){echo $email;} ?>><br><br>

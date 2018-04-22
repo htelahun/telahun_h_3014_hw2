@@ -34,7 +34,7 @@ $user = getAll($tbl);
       <?php
     while($row = mysqli_fetch_array($user)){
       //
-      echo "{$row['user_fname']} <a href=\"phpscripts/caller.php?caller_id=delete&id={$row['user_id']}\">Delete User</a><br>";
+      echo "<p style=\"margin-left:20%;\" >{$row['user_fname']}</p> <a style=\"margin-top:-45px;margin-left:200px;width:90px;padding: 10px;border: solid 1px white;background-color: #464646;color: white;float: left;text-decoration:none;\" href=\"phpscripts/caller.php?caller_id=delete&id={$row['user_id']}\">Delete User</a><br>";
 
 
       }

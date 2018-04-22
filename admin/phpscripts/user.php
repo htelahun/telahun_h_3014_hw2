@@ -1,28 +1,31 @@
 <?php
 
-function createUser($fname, $username, $password, $email, $userlvl){
+function createUser($fname, $username,$email, $userlvl){
   include('connect.php');
 
-  $userString = "INSERT INTO tbl_user VALUES (NULL, '{$fname}', '{$username}', '{$password}', '{$email}', NULL, '{$userlvl}', 'no')";
+  $password_string = '1234567890';
+  $password = substr(str_shuffle($password_string), 0, 9);
+
+  $userString = "INSERT INTO tbl_user VALUES (NULL, '{$fname}', '{$username}', '{$password}', '{$email}', NULL, '{$userlvl}', 'no', '0')";
 //echo $userString;
 
   $userQuery = mysqli_query($link, $userString);
-  redirect_to("admin_index.php");
-  // if($userQuery){
-  //
-  //   $to      = $email;
-  //   $subject = 'Login Information';
-  //   $message = " Hi {$fname} your user name is: {$username} and your password is: {$password}. Click the link to login: <a>index.php</a>" ;
-  //
-  //   mail($to, $subject, $message);
-  //
-  //   redirect_to("admin_index.php");
-  //
-  // }else{
-  //   $message = "there was a problem setting up this user.";
-  //
-  //   return $message;
-  // }
+
+  if($userQuery){
+
+    $to      = $email;
+    $subject = 'Login Information';
+    $message = " Hi {$fname} your user name is: {$username} and your password is: {$password}. You can login at: index.php" ;
+
+    mail($to, $subject, $message);
+
+    redirect_to("admin_index.php");
+
+  }else{
+    $message = "there was a problem setting up this user.";
+
+    return $message;
+  }
 
 
   mysqli_close($link);
