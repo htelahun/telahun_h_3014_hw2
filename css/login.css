@@ -1,0 +1,185 @@
+body{
+  background: radial-gradient(#1d1c1c,#000000);
+  height: 100vh;
+  font-family: arial, helvetica, sans-serif;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+h1{
+   font-size: 30px;
+   padding: 2%;
+ }
+
+ p{
+   margin-left: 10%;
+ }
+
+.left input[type=text]{
+  width: 300px;
+  height: 40px;
+}
+
+ .loginimg{
+   position: absolute;
+   top: 30px;
+   right:50px;
+ }
+
+header ul li {
+  list-style: none;
+}
+ .logout{
+   color: white;
+   float: right;
+   text-decoration: none;
+   position: absolute;
+   top: 50px;
+   right:150px;
+ }
+/* login */
+
+.login-box{
+  background-color: black;
+  border: solid grey 1px;
+  color: white;
+  width: 400px;
+  margin: 15% 35%;
+  padding-top: 20px;
+  padding-bottom: 4%;
+}
+
+.title{
+  margin-left: 220px;
+  margin-bottom: 10%;
+}
+
+form label {
+  margin-right: 100px;
+}
+
+input[type=text]{
+  background-color: black;
+  border: solid white 1px;
+  color: white;
+
+}
+.center1{
+  margin-left: 5%;
+  padding-left: 30px;
+}
+.center{
+  margin-right: 8%;
+  margin-left: 8%;
+  width: 300px;
+  height: 40px;
+  margin-top: 5px;
+  padding-left: 30px;
+}
+.center-t{
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-bottom: 5%;
+  border-bottom: solid white 4px;
+}
+
+.center-2{
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 50px;
+  border-bottom: solid white 4px;
+}
+
+.center-btn{
+  padding: 10px;
+  float: right;
+  margin-right: 9%;
+  margin-bottom: 1%;
+  border: solid 1px grey;
+  background-color: white;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.2);
+  color: black;
+}
+
+.forgot{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding-left: 8%;
+  font-size: .8em;
+}
+
+.link1{
+  margin-left: 8%;
+}
+
+.click{
+  margin-right: 2%;
+  font-size: .9em;
+  border: solid 1px grey;
+  padding: 5px;
+  background-color: white;
+  text-decoration: none;
+  color: black;
+}
+
+/* add page */
+.header{
+  color: white;
+  border-bottom: solid white 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+}
+
+.mid{
+  margin-left: 10%;
+  float: left;
+  margin-top: 40px;
+}
+.center-btn2{
+  padding: 10px;
+  border: solid 1px white;
+  background-color: #464646;
+  color: white;
+  float: left;
+  margin-top: 20px;
+  margin-left: 45%;
+}
+.center-input{
+  float: right;
+  margin-right: 10%;
+  width: 700px;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 30px;
+}
+.btn-e{
+  float: right;
+  padding: 8px;
+  background-color: #464646;
+  border: white solid 1px;
+  color:white;
+  margin-left: 10%;
+  margin-top: -35px;
+}
+/* edit page */
+.movies{
+  color: white;
+  list-style: none;
+  float: left;
+}
+.movie-t{
+  width: 500px;
+}
+.position{
+  margin-left: 6%;
+}
+.btn{
+  float: right;
+  padding: 8px;
+  background-color: #464646;
+  border: white solid 1px;
+  color:white;
+  margin-left: 10%;
+  margin-top: -35px;
+}
